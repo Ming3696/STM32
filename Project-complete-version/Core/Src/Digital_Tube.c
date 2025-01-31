@@ -287,12 +287,15 @@ void Mode_2_Show_TimerMode(void)
 //闹钟倒计时的数码管 Mode_3
 void Mode_3_Show_AlarmClock(void)
 {
-									if(Mode_3 == 1)
-									{
-										KeyCode_9 = KeyPro_K9();
 										int static set_miao = 0;
 										int static set_fen = 0;
 										int static set_v = 0;
+									if(Mode_3 == 1)
+									{
+										KeyCode_9 = KeyPro_K9();
+//										int static set_miao = 0;
+//										int static set_fen = 0;
+//										int static set_v = 0;
 										
 										int static num = 0;
 										if(KeyCode_9 == 2)
@@ -368,14 +371,14 @@ void Mode_3_Show_AlarmClock(void)
 //												}
 //										}
 
-										if(	second == 0 && minutes == 0 && hao_second == 0 && naozhong == 1)
-										{		
-											second = 10;
-											minutes = 5;
-											naozhong = 0;
-											set_v  = 0;
-											flag_music = 1;
-										}	
+//										if(	second == 0 && minutes == 0 && hao_second == 0 && naozhong == 1)
+//										{		
+//											second = 10;
+//											minutes = 5;
+//											naozhong = 0;
+//											set_v  = 0;
+//											flag_music = 1;
+//										}	
 											
 										if(naozhong == 0)
 										{
@@ -436,6 +439,20 @@ void Mode_3_Show_AlarmClock(void)
 												{	n4 = 7;}
 										}
 									}//mode3括号
+									
+										if(	second == 0 && minutes == 0 && hao_second == 0 && naozhong == 1)
+										{		
+											second = 10;
+											minutes = 5;
+											hao_second = 0;
+											naozhong = 0;
+											set_v  = 0;
+											flag_music = 1;
+										}	
+									
+									
+									
+									
 }
 
 void Mode_2_Counter(void)																								//不随模式的改变而打断

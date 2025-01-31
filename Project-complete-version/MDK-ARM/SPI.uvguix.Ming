@@ -3607,7 +3607,7 @@
       <Doc>
         <Name>..\Core\Src\Draw_Clock.c</Name>
         <ColumnNumber>13</ColumnNumber>
-        <TopLine>91</TopLine>
+        <TopLine>23</TopLine>
         <CurrentLine>18</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
@@ -3615,9 +3615,9 @@
       </Doc>
       <Doc>
         <Name>..\Core\Src\Digital_Tube.c</Name>
-        <ColumnNumber>37</ColumnNumber>
-        <TopLine>49</TopLine>
-        <CurrentLine>100</CurrentLine>
+        <ColumnNumber>21</ColumnNumber>
+        <TopLine>229</TopLine>
+        <CurrentLine>440</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders>48,128,172</ContractedFolders>
         <PaneID>0</PaneID>
